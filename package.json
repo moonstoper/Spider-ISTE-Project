@@ -1,17 +1,14 @@
-
 {
   "name": "spider-iste",
   "version": "1.0.0",
   "description": "WebProject for ISTE Spider",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "dev": "npm run server"
+    "test": "echo \"Error : None\" && exit 1"
   },
   "author": "",
   "license": "GNU Affero General Public License v3",
   "dependencies": {
-    "nodemon": "^2.0.4"
+    "bootstrap-icons": "^1.0.0"
   }
 }
