@@ -13,3 +13,8 @@
     left: 45%;
 }
 /*# sourceMappingURL=main.css.map */
+
+
+/*importing fonts from font.css*/
+@import url(./font.css);
+
