@@ -6067,8 +6067,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   font-display: block;
-  src: url("./webfonts/fa-solid-900.eot");
-  src: url("./webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-solid-900.woff2") format("woff2"), url("./webfonts/fa-solid-900.woff") format("woff"), url("./webfonts/fa-solid-900.ttf") format("truetype"), url("./webfonts/fa-solid-900.svg#fontawesome") format("svg");
+  src: url("/fa-solid-900.ace1314d.eot");
+  src: url("/fa-solid-900.ace1314d.eot?#iefix") format("embedded-opentype"), url("/fa-solid-900.9fc19d7d.woff2") format("woff2"), url("/fa-solid-900.93b3a879.woff") format("woff"), url("/fa-solid-900.e2860f6a.ttf") format("truetype"), url("/fa-solid-900.800e389c.svg#fontawesome") format("svg");
 }
 
 .fa,
@@ -6087,8 +6087,8 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url("./webfonts/fa-brands-400.eot");
-  src: url("./webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-brands-400.woff2") format("woff2"), url("./webfonts/fa-brands-400.woff") format("woff"), url("./webfonts/fa-brands-400.ttf") format("truetype"), url("./webfonts/fa-brands-400.svg#fontawesome") format("svg");
+  src: url("/fa-brands-400.054f427f.eot");
+  src: url("/fa-brands-400.054f427f.eot?#iefix") format("embedded-opentype"), url("/fa-brands-400.f61d99ef.woff2") format("woff2"), url("/fa-brands-400.1b5a0929.woff") format("woff"), url("/fa-brands-400.aefe700d.ttf") format("truetype"), url("/fa-brands-400.cd7747f9.svg#fontawesome") format("svg");
 }
 
 .fab {
@@ -6205,7 +6205,7 @@ nav.scroll {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 29rem;
+    margin-top: 30rem;
     clip-path: circle(100px at 90% -10%);
     -webkit-clip-path: circle(100px at 90% -10%);
     pointer-events: none;
@@ -6270,27 +6270,5 @@ nav.scroll {
   }
 }
 
-.containerbox {
-  height: 100vh;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
-.img1 {
-  height: 70vh;
-  width: 50%;
-  transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-}
+/*# sourceMappingURL=/suraj.3887e539.css.map */

@@ -1,5 +1,5 @@
 
-@import ../sass/_star
+@import ../sass/_color
 @import ../node_modules/include-media/dist/_include-media
 @import ../scss/fontawesome
 @import ../scss/solid
@@ -13,12 +13,17 @@
 .header
     position: sticky
     top: 0px
+    
 .bar
     margin-left: 0rem
     margin-right: 0rem
     height: 1vh
     background-color: $logocolor
     top: 0px
+    margin-bottom: -1px 
+    bottom: -3px
+    z-index: 2
+    display: flex
 
 nav
     height: 10vh
@@ -26,7 +31,10 @@ nav
     justify-content: space-around
     align-items: center
     position: sticky
-    background-color: #f8f8f8
+    background: transparent
+
+nav.scroll
+    background: $navbg
 
 .logo
     position: relative
@@ -72,48 +80,52 @@ nav
     .navlinks
         display: flex
         position: fixed
-        color: none
+        color: $hamcolor
         height: 50vh
         width: 100%
-        flex-direction: row
+        flex-direction: column
         margin-top: 29rem
         clip-path: circle(100px at 90% -10%)
         -webkit-clip-path: circle(100px at 90% -10%)
         pointer-events: none
-        transition: all .1s ease-out
-    .navlinks a
-        color: $hamcolor
+        transition: all 1s ease-out
+    
+
     .logo
         margin-left: 2%
-
+    .logo.open
+        color: #ffffff
+        z-index: 2
     .burger
         color:
         z-index: 2
     .burger div
         display: inline
         color: $hamcolor
-
     .navlinks.open
         position: fixed
         display: flex
-        color: $hamcolor
-        background-color: #f8f8f8
-        flex-direction: row
+        color: $navbg
+        background-color: $logocolor
+        flex-direction: column
         transition: all 1s ease-in
         clip-path: circle(1000px at 90% -10%)
         -webkit-clip-path: circle(1000px at 90% -10%)
         pointer-events: all
+
+    .navlinks.open a
+        color: $navbg
+    
+
     .burger.cross div
         // transition: all 1s ease-out
         z-index: 2
-        color: $hamcolor
+        color: $navbg
         &:before
             content: fa-content($fa-var-times)
     
-    navlinks li
-        opacity: 0
     nav.open
-        // background-color: $navlinkbg
+        background-color: $logocolor 
         
     .bar.open
         // background-color: $navlinkbg    
@@ -124,8 +136,22 @@ nav
         transition: all .1s ease .2s
     .navlinks li:nth-child(3)
         transition: all .1s ease .2s
-    li.fade
-        opacity: 1
+    
 
+.containerbox
+    height: 100vh
+    width: 100%
+    display: flex
+    flex-direction: row-reverse
+    justify-content: space-evenly
+    align-items: center
+    
 
+.img1
+    height: 70vh
+    width: 50%
+    transform: scaleX(-1)
+    -webkit-transform: scaleX(-1)
+    
+    
 
