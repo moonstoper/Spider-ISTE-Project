@@ -1,0 +1,74 @@
+
+@import ../sass/_star
+@import ../node_modules/include-media/dist/_include-media
+@import ../scss/fontawesome
+@import ../scss/solid
+@import ../scss/brands
+
+*
+    margin: 0rem
+    padding: 0rem
+    box-sizing: border-box
+
+.bar
+    margin-left: 0rem
+    margin-right: 0rem
+    height: 1vh
+    background-color: #CF649A
+
+
+nav
+    height: 10vh
+    display: flex
+    justify-content: space-around
+    align-items: center
+
+.logo
+    font-size: 1rem
+    font-family: Heatwood
+    color: #CF649A
+    margin-left: 5%
+
+.containerbox
+    height: 100vh
+    margin: auto
+
+.navlinks
+   display: flex
+   justify-content: space-around
+   align-items: center
+   list-style: none
+   width: 30rem
+   margin-left: auto
+   margin-top: 1rem
+
+       
+    
+.navlinks a
+    text-decoration: none    
+    color: #4665f0
+    font-family: 'Poppins',sans-serif
+    font-weight: bold
+
+.burger div
+    @extend %fa-icon
+    @extend .fas
+    display: none
+    font-size: 1.5rem
+    &:before 
+        content: fa-content($fa-var-bars)
+    
+    
+
+.line1
+    border-left : 2rem solid red
+    width: 1rem
+         
+@include media("<=700px")
+    .navlinks
+        display: none   
+    .logo
+        margin-left: 2% 
+    .burger div
+        display: inline
+        color: #5e6997         
