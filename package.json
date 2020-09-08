@@ -7,7 +7,7 @@
     "test": "echo \"Error : None\" && exit 1"
   },
   "author": "",
-  "license": "GNU Affero General Public License v3",
+  "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "bootstrap": "^4.5.2",
     "include-media": "^1.4.9"
