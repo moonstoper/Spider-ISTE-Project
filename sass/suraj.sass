@@ -10,6 +10,9 @@
     padding: 0rem
     box-sizing: border-box
 
+.header
+    position: sticky
+    top: 0px
 .bar
     margin-left: 0rem
     margin-right: 0rem
@@ -23,6 +26,7 @@ nav
     justify-content: space-around
     align-items: center
     position: sticky
+    background-color: #f8f8f8
 
 .logo
     position: relative
@@ -47,7 +51,7 @@ nav
 
 .navlinks a
     text-decoration: none
-    color: $navlinkbg
+    color: $hamcolor
     font-family: 'Poppins',sans-serif
     font-weight: bold
     
@@ -69,16 +73,16 @@ nav
         display: flex
         position: fixed
         color: none
-        clip-path: circle(100px at 90% -10%)
         height: 50vh
         width: 100%
         flex-direction: row
-        margin-top: 30rem
+        margin-top: 29rem
+        clip-path: circle(100px at 90% -10%)
         -webkit-clip-path: circle(100px at 90% -10%)
         pointer-events: none
-        transition: all 1s ease-out
+        transition: all .1s ease-out
     .navlinks a
-        color: #ffffff
+        color: $hamcolor
     .logo
         margin-left: 2%
 
@@ -87,28 +91,41 @@ nav
         z-index: 2
     .burger div
         display: inline
-        color: #5e6997
+        color: $hamcolor
 
     .navlinks.open
         position: fixed
         display: flex
-        color: #f4fffc
-        background-color: $navlinkbg
+        color: $hamcolor
+        background-color: #f8f8f8
         flex-direction: row
-        
+        transition: all 1s ease-in
         clip-path: circle(1000px at 90% -10%)
         -webkit-clip-path: circle(1000px at 90% -10%)
         pointer-events: all
     .burger.cross div
-        transition: all 1s ease-out
+        // transition: all 1s ease-out
         z-index: 2
-        color: #5e6997
+        color: $hamcolor
         &:before
             content: fa-content($fa-var-times)
-
+    
+    navlinks li
+        opacity: 0
     nav.open
         // background-color: $navlinkbg
+        
     .bar.open
         // background-color: $navlinkbg    
     
-        
+    .navlinks li:nth-child(1)
+        transition: all .1s ease .2s
+    .navlinks li:nth-child(2)
+        transition: all .1s ease .2s
+    .navlinks li:nth-child(3)
+        transition: all .1s ease .2s
+    li.fade
+        opacity: 1
+
+
+

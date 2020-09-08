@@ -6103,6 +6103,12 @@ readers do not read off random characters that represent icons */
           box-sizing: border-box;
 }
 
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
 .bar {
   margin-left: 0rem;
   margin-right: 0rem;
@@ -6123,6 +6129,7 @@ nav {
           align-items: center;
   position: -webkit-sticky;
   position: sticky;
+  background-color: #f8f8f8;
 }
 
 .logo {
@@ -6156,7 +6163,7 @@ nav {
 
 .navlinks a {
   text-decoration: none;
-  color: #4665f0;
+  color: #5e6997;
   font-family: 'Poppins',sans-serif;
   font-weight: bold;
 }
@@ -6182,21 +6189,21 @@ nav {
     display: flex;
     position: fixed;
     color: none;
-    clip-path: circle(100px at 90% -10%);
     height: 50vh;
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 30rem;
+    margin-top: 29rem;
+    clip-path: circle(100px at 90% -10%);
     -webkit-clip-path: circle(100px at 90% -10%);
     pointer-events: none;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
+    -webkit-transition: all .1s ease-out;
+    transition: all .1s ease-out;
   }
   .navlinks a {
-    color: #ffffff;
+    color: #5e6997;
   }
   .logo {
     margin-left: 2%;
@@ -6213,23 +6220,41 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #f4fffc;
-    background-color: #4665f0;
+    color: #5e6997;
+    background-color: #f8f8f8;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in;
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
   }
   .burger.cross div {
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
     z-index: 2;
     color: #5e6997;
   }
   .burger.cross div:before {
     content: "\f00d";
+  }
+  navlinks li {
+    opacity: 0;
+  }
+  .navlinks li:nth-child(1) {
+    -webkit-transition: all .1s ease .2s;
+    transition: all .1s ease .2s;
+  }
+  .navlinks li:nth-child(2) {
+    -webkit-transition: all .1s ease .2s;
+    transition: all .1s ease .2s;
+  }
+  .navlinks li:nth-child(3) {
+    -webkit-transition: all .1s ease .2s;
+    transition: all .1s ease .2s;
+  }
+  li.fade {
+    opacity: 1;
   }
 }
