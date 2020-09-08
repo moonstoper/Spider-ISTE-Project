@@ -6108,6 +6108,7 @@ readers do not read off random characters that represent icons */
   margin-right: 0rem;
   height: 1vh;
   background-color: #CF649A;
+  top: 0px;
 }
 
 nav {
@@ -6120,13 +6121,17 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .logo {
+  position: relative;
   font-size: 1rem;
   font-family: Heatwood;
   color: #CF649A;
   margin-left: 5%;
+  overflow: visible;
 }
 
 .containerbox {
@@ -6170,15 +6175,61 @@ nav {
   width: 1rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 730px) {
   .navlinks {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    color: none;
+    clip-path: circle(100px at 90% -10%);
+    height: 50vh;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 30rem;
+    -webkit-clip-path: circle(100px at 90% -10%);
+    pointer-events: none;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  .navlinks a {
+    color: #ffffff;
   }
   .logo {
     margin-left: 2%;
   }
+  .burger {
+    z-index: 2;
+  }
   .burger div {
     display: inline;
     color: #5e6997;
+  }
+  .navlinks.open {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #f4fffc;
+    background-color: #4665f0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .burger.cross div {
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    z-index: 2;
+    color: #5e6997;
+  }
+  .burger.cross div:before {
+    content: "\f00d";
   }
 }
