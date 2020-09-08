@@ -9,6 +9,7 @@
   "author": "",
   "license": "GNU Affero General Public License v3",
   "dependencies": {
+    "bootstrap": "^4.5.2",
     "bootstrap-icons": "^1.0.0"
   }
 }
