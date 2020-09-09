@@ -11,8 +11,11 @@
     box-sizing: border-box
 
 .header
+    margin: 0rem
+    padding: 0rem
     position: sticky
     top: 0px
+    z-index: 2
     
 .bar
     margin-left: 0rem
@@ -31,10 +34,13 @@ nav
     justify-content: space-around
     align-items: center
     position: sticky
-    background: transparent
+    z-index: 2
 
-nav.scroll
-    background: $navbg
+.onscroll
+    background: #ffffff00
+.onscroll.scroll
+    background: $navbg 
+      
 
 .logo
     position: relative
@@ -77,6 +83,8 @@ nav.scroll
     width: 1rem
 
 @include media("<=730px")
+    .onscroll.reverse
+        background: $logocolor !important  
     .navlinks
         display: flex
         position: fixed
@@ -84,6 +92,7 @@ nav.scroll
         height: 50vh
         width: 100%
         flex-direction: column
+        flex-shrink: 30%
         margin-top: 29rem
         clip-path: circle(100px at 90% -10%)
         -webkit-clip-path: circle(100px at 90% -10%)
@@ -98,7 +107,7 @@ nav.scroll
         z-index: 2
     .burger
         color:
-        z-index: 2
+        z-index: 3
     .burger div
         display: inline
         color: $hamcolor
@@ -119,7 +128,7 @@ nav.scroll
 
     .burger.cross div
         // transition: all 1s ease-out
-        z-index: 2
+        z-index: 3
         color: $navbg
         &:before
             content: fa-content($fa-var-times)
@@ -136,14 +145,16 @@ nav.scroll
         transition: all .1s ease .2s
     .navlinks li:nth-child(3)
         transition: all .1s ease .2s
+
+       
     
 
 .containerbox
     height: 100vh
     width: 100%
     display: flex
-    flex-direction: row-reverse
-    justify-content: space-evenly
+    flex-direction: row
+    justify-content: space-around
     align-items: center
     
 
@@ -155,3 +166,11 @@ nav.scroll
     
     
 
+@include media("<=730px")
+    .containerbox
+        height: 90vh
+        flex-direction: column
+    .img1
+        height: 60vh
+    .greets
+        margin-top: 10rem        
