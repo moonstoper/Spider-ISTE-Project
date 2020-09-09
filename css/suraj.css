@@ -6104,9 +6104,12 @@ readers do not read off random characters that represent icons */
 }
 
 .header {
+  margin: 0rem;
+  padding: 0rem;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
+  z-index: 2;
 }
 
 .bar {
@@ -6135,10 +6138,14 @@ nav {
           align-items: center;
   position: -webkit-sticky;
   position: sticky;
-  background: transparent;
+  z-index: 2;
 }
 
-nav.scroll {
+.onscroll {
+  background: #ffffff00;
+}
+
+.onscroll.scroll {
   background: #f8f8f8;
 }
 
@@ -6193,6 +6200,9 @@ nav.scroll {
 }
 
 @media (max-width: 730px) {
+  .onscroll.reverse {
+    background: #db80ad !important;
+  }
   .navlinks {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6205,6 +6215,8 @@ nav.scroll {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-negative: 30%;
+        flex-shrink: 30%;
     margin-top: 29rem;
     clip-path: circle(100px at 90% -10%);
     -webkit-clip-path: circle(100px at 90% -10%);
@@ -6220,7 +6232,7 @@ nav.scroll {
     z-index: 2;
   }
   .burger {
-    z-index: 2;
+    z-index: 3;
   }
   .burger div {
     display: inline;
@@ -6247,7 +6259,7 @@ nav.scroll {
     color: #f8f8f8;
   }
   .burger.cross div {
-    z-index: 2;
+    z-index: 3;
     color: #f8f8f8;
   }
   .burger.cross div:before {
@@ -6277,12 +6289,11 @@ nav.scroll {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -6293,4 +6304,20 @@ nav.scroll {
   width: 50%;
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
+}
+
+@media (max-width: 730px) {
+  .containerbox {
+    height: 90vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .img1 {
+    height: 60vh;
+  }
+  .greets {
+    margin-top: 10rem;
+  }
 }
