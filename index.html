@@ -19,16 +19,6 @@
 </head>
 <body>
 
-  <script>
-    $(function(){
-      var includes = $('[data-include]');
-      jQuery.each(includes, function(){
-        var file = 'views/' + $(this).data('include') + '.html';
-        $(this).load(file);
-      });
-    });
-  </script>
-
     <!--start header-->
     <div class="header">
     <div class="bar"> </div>
@@ -44,27 +34,31 @@
       </div>
     </nav>
   </div>
+  <!--end-header-->
+
   <div class="containerbox">
     <img src="images/undraw_Feeling_of_joy_re_cqko.svg" class="img1" />
   </div>
 
   <div class="row">
     <div class="col-lg-6 col-md-6 text-right text-uppercase">
-      <h2 class="font-italic">________________¡Bienvenidos!</h2><br/>
+      <h2 class="font-italic">___________¡Bienvenidos!</h2><br/>
       <h1 class="font-weight-bold"> I'm Suraj</h1>
-      <h4> Web and game developer</h4><br/>
-      <button type= "button" class="btn btn-outline-primary">Here me</button>
-      <button type="button" class="bnt btn-outline-dark">get cv</button>
+      <h4 > Web and game developer</h4><br/>
+      <button type= "button" class="btn btn-outline-primary" style="margin-right: 16px;">Here me</button>
+      <button type= "button" class="btn btn-outline-primary" style="margin-right: 16px;">Get Cv</button>
+      
     </div>
     <div class="col-lg-6 col-md-6">
       <img src="images/Closeup_Dice_Three_3_Bokeh_592383_1280x720.jpg" class="img-fluid">
     </div>
   </div>
-  <div data-include="footer"></div>
-
-
+  
     <a href="https://www.freepik.com/vectors/pattern">Pattern vector created by pikisuperstar - www.freepik.com</a>
     <script src="js/hamburger.js"></script>
+    <div>
+      <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    </div>
     
 </body>
 </html>
