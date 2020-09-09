@@ -18,9 +18,9 @@
     <title>Portfolio</title>
 </head>
 <body>
-
+<div class="container-fluid">
     <!--start header-->
-    <div class="header">
+  <div class="header">
     <div class="bar"> </div>
     <nav>
       <div class="logo">Suraj Kachhap</div>
@@ -35,29 +35,80 @@
     </nav>
   </div>
   <!--end-header-->
+  
+    <!--start-carousel-effect-->
+    <!--wo I'am dev aur image ka baat kiya tha, usko yha add karenge....1 nhi 2..1 slide Suraj aur 1 Sapan-->
+    <!--2 image taiyar karo jiska width aur height same rakhna-->
+    <div class="row conatiner">
+      <div class="col-md-12">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
 
-  <div class="containerbox">
-    <img src="images/undraw_Feeling_of_joy_re_cqko.svg" class="img1" />
-  </div>
+      <!--Suraj-->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="conatiner">
+            <div class="row text-right mx-auto">
+              <div class="col-lg-6 col-md-6 col-sm-9 col-sm-offset-3 text-uppercase">
+                <h2 class="font-italic">___________¡Bienvenidos!</h2><br/>
+                <h1 class="font-weight-bold"> I am Suraj</h1>
+                <h5> Web and game developer</h5><br/>
+                <button type= "button" class="btn btn-outline-primary text-uppercase" style="margin-right: 16px;">Here me</button>
+                <button type= "button" class="btn btn-outline-primary text-uppercase" style="margin-right: 16px;">Get Cv</button>  
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="images/Closeup_Dice_Three_3_Bokeh_592383_1280x720.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <div class="row text-right mx-auto">
-    <div class="col-lg-6 col-md-6 col-sm-9 col-sm-offset-3 text-uppercase">
-      <h2 class="font-italic">___________¡Bienvenidos!</h2><br/>
-      <h1 class="font-weight-bold"> I am Suraj</h1>
-      <h5> Web and game developer</h5><br/>
-      <button type= "button" class="btn btn-outline-primary text-uppercase" style="margin-right: 16px;">Here me</button>
-      <button type= "button" class="btn btn-outline-primary text-uppercase" style="margin-right: 16px;">Get Cv</button>  
+        <!--Sapan-->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row text-right mx-auto">
+              <div class="col-lg-6 col-md-6 col-sm-9 col-sm-offset-3 text-uppercase">
+                <h2 class="font-italic">___________¡Bienvenidos!</h2><br/>
+                <h1 class="font-weight-bold"> I am Sapan</h1>
+                <h5> Web developer </h5><br/> 
+                <button type= "button" class="btn btn-outline-primary text-uppercase" style="margin-right: 16px;">Here me</button>
+                <button type= "button" class="btn btn-outline-primary text-uppercase" style="margin-right: 16px;">Get Cv</button>  
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="images/Texture_Cube_Multicolor_588823_1280x720.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    <div class="col-lg-6 col-md-6 col-sm-12">
-      <img src="images/Closeup_Dice_Three_3_Bokeh_592383_1280x720.jpg" class="img-fluid">
     </div>
   </div>
+    <!--end-carousel-effect-->
+
+    <div class="containerbox">
+      <img src="images/undraw_Feeling_of_joy_re_cqko.svg" class="img1" />
+    </div>
   
     <a href="https://www.freepik.com/vectors/pattern">Pattern vector created by pikisuperstar - www.freepik.com</a>
     <script src="js/hamburger.js"></script>
+
     <div class="footer-copyright text-center py-3"></div>
       <iframe src="footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
     </div>
+  </div>
     
 </body>
 </html>
