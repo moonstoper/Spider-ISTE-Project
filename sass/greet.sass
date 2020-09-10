@@ -23,3 +23,66 @@
 
 .type-cursor.typing
     animation: none    
+
+.img1:hover
+    #banner,#smileball,#smile,#eye1,#eye2,#smileball-shadow
+        transform-origin: center
+        transform-box: fill-box
+        animation: wave 1s infinite  
+    #hand-banner
+        transform-origin: top
+        animation: hand 1s infinite
+    #shape-rect
+        transform-origin: center
+        transform-box: fill-box
+        animation: shapes 3s infinite  
+    #leaf1
+        transform-origin: bottom
+        transform-box: fill-box
+        animation: leafs 3s infinite
+        animation-direction: reverse
+    #leaf2
+        transform-origin: bottom
+        transform-box: fill-box
+        animation: leafs 3s infinite                       
+@keyframes wave
+    0%
+        transform: rotateZ(0deg)
+    50%
+        transform: rotateZ(5deg) 
+    100%
+        transform: rotateZ(0deg)
+
+@keyframes hand
+    0%
+        transform: rotateX(0deg)
+    50%
+        transform: rotateX(10deg)
+    100%
+        transform: rotateX(0deg)    
+        
+@keyframes shapes
+    0%
+        transform: rotateZ(0deg)
+    100%
+        transform: rotateZ(360deg)    
+@keyframes leafs
+    0%
+        transform: rotateZ(0deg)
+    50%
+        transform: rotateZ(10deg)
+    100%
+        transform: rotateZ(0deg)    
+
+.greetimage1,.greetimage2
+    transition: all 1s ease-out
+
+.greetimage1.blockd
+     transition: all 1s ease-out 
+    display: none    
+   
+
+.greetimage2.blockd
+    transition: all 1s ease-out
+    display: none    
+    

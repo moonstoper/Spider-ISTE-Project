@@ -1,11 +1,13 @@
 const textarray = ["डेवलपर हूं.","डिजाइनर हूं."];
 const typingdelay = 200;
 const erasing = 100;
-const newTextDelay = 2000;
+const newTextDelay = 4000;
 let index = 0;
 let charindex = 0;
 const typesection = document.querySelector(".type-text");
 const typecursor = document.querySelector(".type-cursor");
+const header1 = document.querySelector(".greetimage1");
+const header2 = document.querySelector(".greetimage2");
 function type() {
   if (charindex < textarray[index].length) {
       if(!typecursor.classList.contains("typing")) typecursor.classList.add("typing");
@@ -13,6 +15,8 @@ function type() {
     charindex++;
     setTimeout(type, typingdelay);
   } else {
+      header1.classList.toggle("blockd");
+      header2.classList.toggle("blockd");
       typecursor.classList.remove("typing")
     setTimeout(erase, newTextDelay);
   }

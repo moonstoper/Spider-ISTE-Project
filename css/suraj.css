@@ -6114,7 +6114,7 @@ readers do not read off random characters that represent icons */
 
 .bar {
   height: 1vh;
-  background-color: #db80ad;
+  background-color: #6C63FF;
   top: 0px;
   margin-bottom: -1px;
   bottom: -3px;
@@ -6151,7 +6151,7 @@ nav {
   position: relative;
   font-size: 1rem;
   font-family: Heatwood !important;
-  color: #db80ad;
+  color: #6C63FF;
   margin-left: 5%;
   overflow: visible;
 }
@@ -6199,7 +6199,7 @@ nav {
 
 @media (max-width: 730px) {
   .onscroll.reverse {
-    background: #db80ad !important;
+    background: #6C63FF !important;
   }
   .navlinks {
     display: -webkit-box;
@@ -6240,7 +6240,7 @@ nav {
     display: -ms-flexbox;
     display: flex;
     color: #f8f8f8;
-    background-color: #db80ad;
+    background-color: #6C63FF;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -6262,7 +6262,7 @@ nav {
     content: "\f00d";
   }
   nav.open {
-    background-color: #db80ad;
+    background-color: #6C63FF;
   }
   .navlinks li:nth-child(1) {
     -webkit-transition: all .1s ease .2s;
@@ -6301,6 +6301,11 @@ nav {
   width: 50%;
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  margin-top: 5rem;
+  margin-right: 1rem;
+  padding: 2rem;
 }
 
 .greets {
@@ -6309,7 +6314,7 @@ nav {
   -ms-flex-line-pack: center;
       align-content: center;
   width: 50%;
-  margin-left: 3rem;
+  margin-left: 4rem;
 }
 
 @media (max-width: 730px) {
