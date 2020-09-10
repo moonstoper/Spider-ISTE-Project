@@ -8,14 +8,15 @@
 *
     margin: 0rem
     padding: 0rem
-    box-sizing: border-box
+    
 
 .header
     margin: 0rem
     padding: 0rem
-    position: sticky
+    position: fixed
     top: 0px
     z-index: 2
+    width: 100%
 
 .bar
     height: 1vh
@@ -23,7 +24,7 @@
     top: 0px
     margin-bottom: -1px
     bottom: -3px
-    z-index: 2
+    z-index: 5
     display: flex
 
 nav
@@ -31,13 +32,17 @@ nav
     display: flex
     justify-content: space-around
     align-items: center
-    position: sticky
-    z-index: 2
+    position: sticky !important
+    overflow: none
+    z-index: 5
+    top: 1rem
+    overflow: visible
 
 .onscroll
     background: #ffffff00
 .onscroll.scroll
     background: $navbg
+    top: 0rem
 
 .logo
     position: relative
@@ -73,6 +78,7 @@ nav
         height: 0rem
         width: 0rem
         transition: all .5s ease-out
+       z-index: -2
 
     &:hover
         &::before
@@ -154,6 +160,7 @@ nav
 
     nav.open
         background-color: $logocolor
+        top: 0rem
 
     .bar.open
         // background-color: $navlinkbg    
@@ -169,6 +176,7 @@ nav
     display: block
     position: relative
     justify-content: center
+    top: 100vh
     margin: -1rem 0 -1rem 0
     align-content: center
     bottom: 0px
@@ -177,3 +185,14 @@ nav
 @include media("<=730px")
     .arrow
         margin-top: -3rem    
+
+.content
+    display: flex
+    top: 100vh 
+    position: relative      
+    background-color: $logocolor
+
+.about
+    height: 100vh 
+    border-top: .1rem solid $colornav    
+       

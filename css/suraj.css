@@ -6099,17 +6099,15 @@ readers do not read off random characters that represent icons */
 * {
   margin: 0rem;
   padding: 0rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .header {
   margin: 0rem;
   padding: 0rem;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 2;
+  width: 100%;
 }
 
 .bar {
@@ -6118,7 +6116,7 @@ readers do not read off random characters that represent icons */
   top: 0px;
   margin-bottom: -1px;
   bottom: -3px;
-  z-index: 2;
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6134,9 +6132,12 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 2;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  overflow: none;
+  z-index: 5;
+  top: 1rem;
+  overflow: visible;
 }
 
 .onscroll {
@@ -6145,6 +6146,7 @@ nav {
 
 .onscroll.scroll {
   background: #f8f8f8;
+  top: 0rem;
 }
 
 .logo {
@@ -6295,6 +6297,7 @@ nav {
   }
   nav.open {
     background-color: #6C63FF;
+    top: 0rem;
   }
   .navlinks li:nth-child(1) {
     -webkit-transition: all .1s ease .2s;
@@ -6316,6 +6319,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  top: 100vh;
   margin: -1rem 0 -1rem 0;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -6327,4 +6331,18 @@ nav {
   .arrow {
     margin-top: -3rem;
   }
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 100vh;
+  position: relative;
+  background-color: #6C63FF;
+}
+
+.about {
+  height: 100vh;
+  border-top: 0.1rem solid #000000;
 }
