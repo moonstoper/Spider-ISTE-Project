@@ -6194,6 +6194,7 @@ nav {
   width: 0rem;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
+  z-index: -2;
 }
 
 .navlinks a:hover::before {
