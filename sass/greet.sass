@@ -1,0 +1,25 @@
+@import ../sass/_color
+.type-text
+    color: $logocolor
+.type-cursor
+    display: inline-block
+    width: .1rem
+    background-color: $hamcolor
+    margin-left: .2rem
+    animation: blink 1s  infinite
+    
+   
+@keyframes blink
+    0%
+        opacity: 1
+    49%
+        opacity: .1    
+    50%
+        opacity: 0 
+    99%
+        opacity: .9   
+    100%
+        opacity: 1
+
+.type-cursor.typing
+    animation: none    

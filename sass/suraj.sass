@@ -6,8 +6,8 @@
 @import ../scss/brands
 
 *
-    margin: 0rem
-    padding: 0rem
+    margin: 0rem 
+    padding: 0rem 
     box-sizing: border-box
 
 .header
@@ -18,8 +18,6 @@
     z-index: 2
     
 .bar
-    margin-left: 0rem
-    margin-right: 0rem
     height: 1vh
     background-color: $logocolor
     top: 0px
@@ -27,6 +25,7 @@
     bottom: -3px
     z-index: 2
     display: flex
+    
 
 nav
     height: 10vh
@@ -35,6 +34,8 @@ nav
     align-items: center
     position: sticky
     z-index: 2
+   
+   
 
 .onscroll
     background: #ffffff00
@@ -92,8 +93,7 @@ nav
         height: 50vh
         width: 100%
         flex-direction: column
-        flex-shrink: 30%
-        margin-top: 29rem
+        margin-top: 27rem
         clip-path: circle(100px at 90% -10%)
         -webkit-clip-path: circle(100px at 90% -10%)
         pointer-events: none
@@ -150,6 +150,7 @@ nav
     
 
 .containerbox
+    margin-top: -5rem
     height: 100vh
     width: 100%
     display: flex
@@ -164,13 +165,20 @@ nav
     transform: scaleX(-1)
     -webkit-transform: scaleX(-1)
     
-    
+.greets
+    font-size: 2.5rem
+    font-weight: bold
+    align-content: center
 
 @include media("<=730px")
     .containerbox
         height: 90vh
         flex-direction: column
+        margin-top: -2rem
     .img1
         height: 60vh
     .greets
-        margin-top: 10rem        
+        margin-top: 10rem   
+        font-size: 2rem
+        
+         
