@@ -6149,11 +6149,12 @@ nav {
 
 .logo {
   position: relative;
-  font-size: 1rem;
-  font-family: Heatwood !important;
+  font-size: 1.8rem;
+  font-family: Poppins !important;
   color: #6C63FF;
   margin-left: 5%;
   overflow: visible;
+  font-weight: bolder;
 }
 
 .containerbox {
@@ -6181,6 +6182,27 @@ nav {
   color: #5e6997;
   font-family: 'Poppins',sans-serif;
   font-weight: bold;
+}
+
+.navlinks a::before {
+  content: "";
+  position: absolute;
+  margin-top: 2rem;
+  height: 0rem;
+  width: 0rem;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.navlinks a:hover::before {
+  content: "";
+  margin-top: 1.2rem;
+  position: absolute;
+  width: 5%;
+  height: .5rem;
+  -webkit-transition: all .7s ease-out;
+  transition: all .7s ease-out;
+  background: #6C63FF;
 }
 
 .burger div {
@@ -6254,6 +6276,16 @@ nav {
   .navlinks.open a {
     color: #f8f8f8;
   }
+  .navlinks.open a::before {
+    background: #f8f8f8;
+    margin-top: 2rem;
+    height: .3rem;
+    width: 50%;
+    right: 50%;
+    left: 25%;
+    -webkit-transition: all .7s ease-out;
+    transition: all .7s ease-out;
+  }
   .burger.cross div {
     z-index: 3;
     color: #f8f8f8;
@@ -6275,5 +6307,24 @@ nav {
   .navlinks li:nth-child(3) {
     -webkit-transition: all .1s ease .2s;
     transition: all .1s ease .2s;
+  }
+}
+
+.arrow {
+  display: block;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -1rem 0 -1rem 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  bottom: 0px;
+  text-align: center;
+}
+
+@media (max-width: 730px) {
+  .arrow {
+    margin-top: -3rem;
   }
 }
