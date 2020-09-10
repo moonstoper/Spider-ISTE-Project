@@ -194,5 +194,16 @@ nav
 
 .about
     height: 100vh 
-    border-top: .1rem solid $colornav   
+    border-top: .1rem solid $colornav    
        
+
+[data-scroll]
+    transition: transform 3s
+
+[data-scroll="in"]
+    transform: translateY(0)
+
+
+[data-scroll="out"]
+    transform: translateY(200px)
+
