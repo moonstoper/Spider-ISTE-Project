@@ -6,6 +6,8 @@
 @import ../scss/brands
 
 
+
+
 *
     margin: 0rem 
     padding: 0rem 
@@ -47,7 +49,7 @@ nav
 .logo
     position: relative
     font-size: 1rem
-    font-family: Heatwood
+    font-family: Heatwood !important
     color: $logocolor
     margin-left: 5%
     overflow: visible
@@ -165,11 +167,14 @@ nav
     width: 50%
     transform: scaleX(-1)
     -webkit-transform: scaleX(-1)
+
     
 .greets
     font-size: 2.5rem
     font-weight: bold
     align-content: center
+    width: 50%
+    margin-left: 3rem 
 
 @include media("<=730px")
     .containerbox
@@ -179,9 +184,10 @@ nav
     .img1
         height: 60vh
     .greets
-
+        width: 60%
         margin-top: 10rem   
         font-size: 2rem
+        
            
 
 
