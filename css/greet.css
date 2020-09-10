@@ -1,1 +1,53 @@
-.type-text{color:#db80ad}.type-cursor{display:inline-block;width:.1rem;background-color:#5e6997;margin-left:.2rem;-webkit-animation:blink 1s  infinite;animation:blink 1s  infinite}@-webkit-keyframes blink{0%{opacity:1}49%{opacity:.1}50%{opacity:0}99%{opacity:.9}100%{opacity:1}}@keyframes blink{0%{opacity:1}49%{opacity:.1}50%{opacity:0}99%{opacity:.9}100%{opacity:1}}.type-cursor.typing{-webkit-animation:none;animation:none}
+.type-text {
+  color: #db80ad;
+}
+
+.type-cursor {
+  display: inline-block;
+  width: .1rem;
+  background-color: #5e6997;
+  margin-left: .2rem;
+  -webkit-animation: blink 1s  infinite;
+          animation: blink 1s  infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: .1;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: .9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: .1;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: .9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.type-cursor.typing {
+  -webkit-animation: none;
+          animation: none;
+}
