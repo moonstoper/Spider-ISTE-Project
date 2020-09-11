@@ -9,13 +9,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  z-index: -2;
+  z-index: 0;
+  font-family: Poppins;
 }
 
 .img1 {
@@ -127,7 +129,7 @@
   }
 }
 
-@media (min-width: 730px) and (max-width: 850px) {
+@media (min-width: 730px) and (max-width: 1200px) {
   .greets {
     margin-top: -9rem;
   }

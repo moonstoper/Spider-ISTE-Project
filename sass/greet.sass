@@ -7,11 +7,11 @@
     width: 100%
     display: flex
     flex-direction: row
-    justify-content: space-around
+    justify-content: center
     align-items: center
     position: fixed
-    z-index: -2
-    
+    z-index: 0
+    font-family: Poppins
 
 .img1
     height: 70vh
@@ -21,7 +21,6 @@
     margin-top: 5rem
     margin-right: 1rem
     padding: 2rem
-    
 
 .type-text
     color: $logocolor
@@ -31,42 +30,39 @@
     background-color: $hamcolor
     margin-left: .2rem
     animation: blink 1s  infinite
-    
-   
+
 @keyframes blink
     0%
         opacity: 1
     49%
-        opacity: .1    
+        opacity: .1
     50%
-        opacity: 0 
+        opacity: 0
     99%
-        opacity: .9   
+        opacity: .9
     100%
         opacity: 1
 
 .type-cursor.typing
-    animation: none    
-
+    animation: none
 
 .greetimage1,.greetimage2
     transition: all 1s ease-out
 
 .greetimage1.blockd
-    transition: all 1s ease-out 
-    display: none    
-   
+    transition: all 1s ease-out
+    display: none
 
 .greetimage2.blockd
     transition: all 1s ease-out
-    display: none  
-    
+    display: none
+
 .greets
     font-size: 2.5rem
     font-weight: bold
     align-content: center
     width: 50%
-    margin-left: 4rem 
+    margin-left: 4rem
 
 @include media("<=730px")
     .containerbox
@@ -77,11 +73,13 @@
         height: 60vh
     .greets
         width: 60%
-        margin-top: 10rem   
+        margin-top: 10rem
         font-size: 2rem
 
-@include media(">=730px","<=850px")
+
+@include media(">=730px","<=1200px")
     .greets
-        margin-top: -9rem      
+        margin-top: -9rem
     .containerbox
-        margin-top: 5rem          
+        margin-top: 5rem
+
