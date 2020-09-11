@@ -6116,7 +6116,7 @@ readers do not read off random characters that represent icons */
   top: 0px;
   margin-bottom: -1px;
   bottom: -3px;
-  z-index: 5;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6135,9 +6135,8 @@ nav {
   position: -webkit-sticky !important;
   position: sticky !important;
   overflow: none;
-  z-index: 5;
+  z-index: 99;
   top: 1rem;
-  overflow: visible;
 }
 
 .onscroll {
@@ -6157,6 +6156,8 @@ nav {
   margin-left: 5%;
   overflow: visible;
   font-weight: bolder;
+  margin-top: 1rem;
+  overflow: none;
 }
 
 .containerbox {
@@ -6189,8 +6190,8 @@ nav {
 .navlinks a::before {
   content: "";
   position: absolute;
-  margin-top: 2rem;
-  height: 0rem;
+  margin-top: 1.2rem;
+  height: .5rem;
   width: 0rem;
   -webkit-transition: all .5s ease-out;
   transition: all .5s ease-out;
@@ -6250,10 +6251,10 @@ nav {
   }
   .logo.open {
     color: #ffffff;
-    z-index: 2;
+    z-index: 99;
   }
   .burger {
-    z-index: 3;
+    z-index: 99;
   }
   .burger div {
     display: inline;
@@ -6290,7 +6291,7 @@ nav {
     transition: all .7s ease-out;
   }
   .burger.cross div {
-    z-index: 3;
+    z-index: 99;
     color: #f8f8f8;
   }
   .burger.cross div:before {
@@ -6321,7 +6322,7 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   top: 100vh;
-  margin: -1rem 0 -1rem 0;
+  margin: -2rem 0 -1rem 0;
   -ms-flex-line-pack: center;
       align-content: center;
   bottom: 0px;
@@ -6339,13 +6340,13 @@ nav {
   display: -ms-flexbox;
   display: flex;
   top: 100vh;
+  margin-top: 1rem;
   position: relative;
-  background-color: #6C63FF;
+  background: #db80ad;
 }
 
 .about {
   height: 100vh;
-  border-top: 0.1rem solid #000000;
 }
 
 [data-scroll] {

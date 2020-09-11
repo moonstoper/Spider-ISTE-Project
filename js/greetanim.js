@@ -1,4 +1,4 @@
-const textarray = ["डेवलपर हूं.","डिजाइनर हूं."];
+const textarray = ["developer.","designer."];
 const typingdelay = 200;
 const erasing = 100;
 const newTextDelay = 4000;

@@ -24,7 +24,7 @@
     top: 0px
     margin-bottom: -1px
     bottom: -3px
-    z-index: 5
+    z-index: 99
     display: flex
 
 nav
@@ -34,9 +34,9 @@ nav
     align-items: center
     position: sticky !important
     overflow: none
-    z-index: 5
+    z-index: 99
     top: 1rem
-    overflow: visible
+    
 
 .onscroll
     background: #ffffff00
@@ -52,6 +52,8 @@ nav
     margin-left: 5%
     overflow: visible
     font-weight: bolder
+    margin-top: 1rem
+    overflow: none
 
 .containerbox
     height: 100vh
@@ -74,8 +76,8 @@ nav
     &::before
         content: ""
         position: absolute
-        margin-top: 2rem
-        height: 0rem
+        margin-top: 1.2rem
+        height: .5rem
         width: 0rem
         transition: all .5s ease-out
         z-index: -2
@@ -122,10 +124,10 @@ nav
         margin-left: 2%
     .logo.open
         color: #ffffff
-        z-index: 2
+        z-index: 99
     .burger
         color:
-        z-index: 3
+        z-index: 99
     .burger div
         display: inline
         color: $hamcolor
@@ -153,7 +155,7 @@ nav
 
     .burger.cross div
         // transition: all 1s ease-out
-        z-index: 3
+        z-index: 99
         color: $navbg
         &:before
             content: fa-content($fa-var-times)
@@ -177,7 +179,7 @@ nav
     position: relative
     justify-content: center
     top: 100vh
-    margin: -1rem 0 -1rem 0
+    margin: -2rem 0 -1rem 0
     align-content: center
     bottom: 0px
     text-align: center
@@ -189,12 +191,13 @@ nav
 .content
     display: flex
     top: 100vh 
+    margin-top: 1rem
     position: relative      
-    background-color: $logocolor
+    background: $pinkcolor
 
 .about
     height: 100vh 
-    border-top: .1rem solid $colornav    
+    //border-top: .1rem solid $colornav    
        
 
 [data-scroll]
