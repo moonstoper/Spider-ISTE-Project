@@ -1,6 +1,6 @@
 @import ../sass/_color
 @import ../node_modules/include-media/dist/_include-media
-
+//parent of intro section and animation
 .containerbox
     margin-top: 0rem
     height: 90vh
@@ -13,6 +13,7 @@
     z-index: 0
     font-family: Poppins
 
+//class for the svg images
 .img1
     height: 70vh
     width: 50%
@@ -22,8 +23,10 @@
     margin-right: 1rem
     padding: 2rem
 
+//animating text color
 .type-text
     color: $logocolor
+//txt cursor animation blink    
 .type-cursor
     display: inline-block
     width: .1rem
@@ -42,41 +45,44 @@
         opacity: .9
     100%
         opacity: 1
-
+//txt cursor when text is being typed
 .type-cursor.typing
     animation: none
-
+//basic transition settings for svg images
 .greetimage1,.greetimage2
     transition: all 1s ease-out
-
+//blockd class for img to disapper it using js
 .greetimage1.blockd
     transition: all 1s ease-out
     display: none
-
+//blockd class for img to disapper it using js
 .greetimage2.blockd
     transition: all 1s ease-out
     display: none
-
+//basic text styles
 .greets
     font-size: 2.5rem
     font-weight: bold
     align-content: center
     width: 50%
     margin-left: 4rem
-
+//on phone
 @include media("<=730px")
+    //making it display content coloumn instead of side by side
     .containerbox
         height: 90vh
         flex-direction: column
         margin-top: -2rem
+    //decreasing img size    
     .img1
         height: 60vh
+    //text position settings    
     .greets
         width: 60%
         margin-top: 10rem
         font-size: 2rem
 
-
+//on tablets
 @include media(">=730px","<=1200px")
     .greets
         margin-top: -9rem

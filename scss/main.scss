@@ -1,8 +1,9 @@
+
 body{
     margin: 0;
     font-family: 'Montserrat';
 }
-
+//section might be interfering with my section class content
 section{
     width: 100%;
     height: 100vh;
@@ -40,6 +41,7 @@ section{
     }
 }
 
+//?one of the reason interfernce to disable it
 
 // section:nth-of-type(2){
 //     background: blanchedalmond;
