@@ -6331,6 +6331,7 @@ nav {
 }
 
 .content {
+  width: 100%;
   top: 100vh;
   margin-top: 1rem;
   position: relative;
@@ -6339,6 +6340,7 @@ nav {
 }
 
 .inner-content {
+  width: 100%;
   padding: 5em;
 }
 
@@ -6349,7 +6351,8 @@ nav {
 }
 
 .about {
-  height: 100vh;
+  height: 50vh;
+  position: relative;
 }
 
 section {
@@ -6358,7 +6361,7 @@ section {
           box-sizing: border-box;
 }
 
-img:hover {
+.img-hover:hover {
   -webkit-animation: shake 0.5s;
           animation: shake 0.5s;
   -webkit-animation-iteration-count: infinite;
