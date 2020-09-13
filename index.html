@@ -40,7 +40,7 @@
   <!--end-header-->
   <!--start-->
   <!--other idea start-->
-  <div class="containerbox">
+  <div class="containerbox" data-scroll>
     <div class="greets">
       <p>Hi.<br />
         I am a <span class="type-text"></span><span class="type-cursor">&nbsp;</span></p>
@@ -53,8 +53,15 @@
   </div>
   <br/>
 
-  <div class="arrow">1<br/>&nbsp;</div> 
+   <div class="arrow">1<br/>&nbsp;</div> 
+   <section class="content">
+     <div class="about rellax"> <section>
+      <h2 data-scroll>shared a trial</h2>
+      <p data-scroll>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum itaque eveniet eius nam consequuntur tempore voluptates natus quos ratione velit, porro ad, ab minus qui alias dicta excepturi non maxime?</p>
+  </section></div>
+   </section>
 
+<<<<<<< HEAD
   <div class="content">
       <!--about-->
       <div class="inner-content about">
@@ -75,19 +82,42 @@
   </div>
   
   
+=======
+  
 
+   <div class="arrow">1<br/>scroll</div> 
+   
+   <!---section type1-->
+   <section class="content">
+     <div class="about">.</div>
+   </section>
+   <!--end section type-2-->
+
+>>>>>>> parent of d103dcc... remove main.css and added the properties to suraj.sass
+
+   <!--section type 2-->
+   <section>
+    <section>
+      <h2 data-scroll>shared a trial</h2>
+      <p data-scroll>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum itaque eveniet eius nam consequuntur tempore voluptates natus quos ratione velit, porro ad, ab minus qui alias dicta excepturi non maxime?</p>
+    </section>
+  </section>
+  <!--end section type 2-->
 
 
   </body>
-  <script src="js/hamburger.js"></script><script src="js/navbar.js"></script>
-  <script src="js/greetanim.js"></script>
+   <script src="js/hamburger.js"></script><script src="js/navbar.js"></script>
+   <script src="js/greetanim.js"></script>
 
-  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
+   <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.7.1/rellax.min.js"></script>
 
-  <script>
-    ScrollOut({
-      threshold: 0.6
-    })
-  </script>
+    <script>
+        ScrollOut({
+            threshold: .6
+        })
+        var rellax= new Rellax('.rellax');
+    </script>
+
+
 </html>
