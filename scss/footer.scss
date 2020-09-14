@@ -1,14 +1,15 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: #262626;
-  }
+//already set in suraj.sass
+// body {
+//     margin: 0;
+//     padding: 0;
+//     background: #262626;
+//   }
   
   
   
   
   
-ul {
+.ul-class {
     margin: 0;
     padding: 0;
     display: flex;
@@ -39,7 +40,7 @@ ul {
       
 }
    
-ul li a::before {
+.ul-class li a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -54,12 +55,12 @@ ul li a::before {
   }
   
   
-ul li a:hover::before {
+.ul-class li a:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 15px #ffee10;
   }
   
-ul li a:hover {
+.ul-class li a:hover {
     color: #ffee10;
     box-shadow: 0 0 5px #ffee10;
     text-shadow: 0 0 5px #ffee10;
