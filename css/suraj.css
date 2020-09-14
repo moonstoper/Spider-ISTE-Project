@@ -6330,6 +6330,7 @@ nav {
   }
 }
 
+/* for about section*/
 .main-section-content {
   background: #db80ad;
   position: relative;
@@ -6402,14 +6403,16 @@ section section img:nth-of-type(2) {
   opacity: 0.5;
 }
 
-.project-image {
+/*for project section*/
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
 }
 
 .project-image:hover {
+  opacity: 0.8;
   -webkit-animation: shake 0.5s;
           animation: shake 0.5s;
   -webkit-animation-iteration-count: infinite;
