@@ -6338,7 +6338,7 @@ nav {
 }
 
 .inner-content {
-  padding: 5em;
+  padding: 5em 1em 5em 1em;
 }
 
 section {
@@ -6402,7 +6402,14 @@ section section img:nth-of-type(2) {
   opacity: 0.5;
 }
 
-.img-hover:hover {
+.project-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.project-image:hover {
   -webkit-animation: shake 0.5s;
           animation: shake 0.5s;
   -webkit-animation-iteration-count: infinite;
