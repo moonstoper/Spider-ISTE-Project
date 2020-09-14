@@ -3,17 +3,16 @@
 #plant-circle,#_2leaf-circle
     fill: $hamcolor
 .greetimage1
-    &:hover
-        #plant-rbl,#plant-rml,#plant-rtl,#_2leaf-black
-            transform-origin: bottom
-            transform-box: fill-box
-            animation: leafswing 1s ease-out infinite
-        #plant-lbl,#plant-ltl,#_2leaf-white
-            transform-origin: bottom
-            transform-box: fill-box
-            animation: leafswingl 1s ease-out infinite
+    #plant-rbl,#plant-rml,#plant-rtl,#_2leaf-black
+        transform-origin: bottom
+        transform-box: fill-box
+        animation: leafswing 1s ease-out infinite
+    #plant-lbl,#plant-ltl,#_2leaf-white
+        transform-origin: bottom
+        transform-box: fill-box
+        animation: leafswingl 1s ease-out infinite
 
-.greetimage1:hover
+.greetimage1
     #circle-blue
         transition: all 2s ease-out
         animation: csw 2s ease-out infinite
@@ -29,15 +28,15 @@
         transform-origin: top
         transform-box: fill-box
         animation: shoe-tap 1s infinite
-    #circle-black
-        transform-origin: top
-        transform-box: fill-box
-        animation: circleb 2s linear infinite
-    #circle-white
-        transform-origin: bottom
-        transform-box: fill-box
-        animation: circleb 2s linear infinite    
-        
+    &:hover
+        #circle-black
+            transform-origin: top
+            transform-box: fill-box
+            animation: circleb 2s linear infinite
+        #circle-white
+            transform-origin: bottom
+            transform-box: fill-box
+            animation: circleb 2s linear infinite  
 
 @keyframes csw
     0%

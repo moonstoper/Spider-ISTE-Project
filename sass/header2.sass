@@ -1,5 +1,5 @@
 @import ../sass/_color
-.greetimage2:hover
+.greetimage2
     #ch-cf-smoke
         size: 100%
         animation: coffee 3s ease-out infinite
@@ -27,7 +27,14 @@
         transform-origin: bottom
         transform-box: fill-box
         animation: leafmove 2s ease-out infinite
-            
+    &:hover
+        #ch-leaf,#ch-leafbranch
+            animation: leafmovx 2s ease-out infinite  
+        #hand-tap
+            transform-origin: bottom
+            transform-box: fill-box
+            color: $navbg
+            animation: handtap 2s ease-out infinite         
 @keyframes coffee
     0%
         transform: translate(0%,0%)
@@ -42,18 +49,18 @@
 
 @keyframes shoe-tap
     0%
-        transform: rotateZ(0)
+        transform: rotateX(0)
     50%
-        transform: rotateZ(30deg)
+        transform: rotateX(30deg)
     100%
-        transform: rotateZ(0)
+        transform: rotateX(0)
 @keyframes legmove
     0%
         transform: rotateZ(0)
     50%
         transform: rotateZ(.5deg)
     100%
-        transform: rotateZ(0)
+        transform: rotateZ(0)      
 @keyframes waves
     0%
         transform: rotateZ(0)
@@ -87,4 +94,29 @@
         transform: rotateZ(-10deg)            
     100%
         transform: rotateZ(0deg)
+@keyframes leafmovx
+    0%
+        transform: rotateY(0deg) rotateZ(0deg)
+        
+    25% 
+        transform: rotateY(50deg) rotateZ(10deg) 
+        
+    50% 
+        transform: rotateY(0deg) rotateZ(0deg)
+        
+    75%
+        transform: rotateY(-50deg) rotateZ(-10deg)   
+               
+    100%
+        transform: rotateY(0deg) rotateZ(0deg)
+        
+
+@keyframes handtap
+    0%
+        transform: rotateZ(0deg)
+    50%
+        transform: rotateZ(-15deg)    
+    100%
+        transform: rotateZ(0deg)
                 
+                        
