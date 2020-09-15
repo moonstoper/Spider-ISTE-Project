@@ -67,7 +67,7 @@
     width: 50%
     margin-left: 4rem
 //on phone
-@include media("<=730px")
+@media(max-width: 730px)
     //making it display content coloumn instead of side by side
     .containerbox
         height: 90vh
@@ -81,6 +81,7 @@
         width: 60%
         margin-top: 10rem
         font-size: 2rem
+        margin-left: -5%
 
 //on tablets
 @include media(">=730px","<=1200px")
