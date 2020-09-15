@@ -4,13 +4,11 @@
 
 .footer-inner {
   padding: 5%;
-}
-
-#footer-follow-me {
   color: white;
 }
 
-#footer-follow-me ul {
+/*glowing-icon*/
+.footer-follow-me ul {
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,12 +19,12 @@
           transform: -50%, -50%;
 }
 
-#footer-follow-me ul li {
+.footer-follow-me ul li {
   list-style: none;
   margin: 0 5%;
 }
 
-#footer-follow-me ul li a {
+.footer-follow-me ul li a {
   display: block;
   width: auto;
   height: auto;
@@ -40,17 +38,37 @@
   transition: .5s;
 }
 
-#footer-follow-me ul li a:hover::before {
+.footer-follow-me ul li a:hover::before {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0 0 15px #ffd000;
           box-shadow: 0 0 15px #ffd000;
 }
 
-#footer-follow-me ul li a:hover {
+.footer-follow-me ul li a:hover {
   color: #fffb00;
   -webkit-box-shadow: 0 0 5px #ffe600;
           box-shadow: 0 0 5px #ffe600;
   text-shadow: 0 0 5px #ffd000;
+}
+
+/*glowing-icon end*/
+/*contact*/
+.contact-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5%;
+}
+
+.contact-info ul li {
+  padding-right: 7%;
+}
+
+@media (max-width: 730px) {
+  .contact-info ul {
+    display: -ms-grid;
+    display: grid;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

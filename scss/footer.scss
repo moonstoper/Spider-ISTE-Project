@@ -6,10 +6,13 @@
 
 .footer-inner{
     padding: 5%;
+    color: white;
 }
 
-#footer-follow-me{
-    color: white;
+
+/*glowing-icon*/
+.footer-follow-me{
+    
 
     ul{
         padding: 1em;
@@ -50,4 +53,29 @@
         text-shadow: 0 0 5px rgb(255, 208, 0);
       }
 }  
+/*glowing-icon end*/
+
+
+
+/*contact*/
+.contact-info{
+    ul{
+        display: flex;
+        padding-left: 5%;
+
+        li{
+            padding-right: 7%;
+        }
+    }
+    
+}
+
+@media(max-width: 730px){
+    .contact-info{
+        ul{
+            display: grid;
+        }
+    }
+}
+
 
