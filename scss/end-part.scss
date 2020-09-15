@@ -1,0 +1,38 @@
+.endPart {
+	position: relative;
+	bottom: 0;
+    width: 100%;
+	align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    h1, h3, p {
+        color: mix(#fff, rgb(202, 23, 23), 90%);
+        font-size: calc(1em + 20vw) ;  
+        font-weight: 900;
+        font-size: 2rem;
+        text-shadow: 
+            -0.0090em 0.0090em 0 mix(#fff, rgb(202, 23, 23), 94%),
+            0.008em 0.008em 0 mix(#fff, #9b0839, 60%),
+            0.03em 0.03em 0 mix(#fff, rgb(202, 23, 23), 62%), 
+            0.015em 0.015em mix(#fff, rgb(202, 23, 23), 64%), 
+            0.06em 0.06em 0 mix(#fff, rgb(202, 23, 23), 66%), 
+            0.09em 0.09em 0 mix(#fff, rgb(202, 23, 23), 68%),
+            0.06em 0.06em 0 mix(#fff, rgb(202, 23, 23), 70%),
+            0.035em 0.035em 0 mix(#fff, rgb(202, 23, 23), 72%);
+    }
+
+    h3{
+        font-size: 1.4rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+    
+}
+// End Codepen spesific styling
+
+
+
