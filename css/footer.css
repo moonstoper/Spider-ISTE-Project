@@ -24,7 +24,7 @@
   margin: 0 5%;
 }
 
-.footer-follow-me ul li a {
+.footer-follow-me ul li i {
   display: block;
   width: auto;
   height: auto;
@@ -38,14 +38,14 @@
   transition: .5s;
 }
 
-.footer-follow-me ul li a:hover::before {
+.footer-follow-me ul li i:hover::before {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0 0 15px #ffd000;
           box-shadow: 0 0 15px #ffd000;
 }
 
-.footer-follow-me ul li a:hover {
+.footer-follow-me ul li i:hover {
   color: #fffb00;
   -webkit-box-shadow: 0 0 5px #ffe600;
           box-shadow: 0 0 5px #ffe600;
