@@ -3,6 +3,12 @@
   
   // $cols - number of column
   // n - number of items
+
+  .grid{
+    li{
+      padding: 0.1rem;
+    }
+  }
   
   @mixin moveInGrid($cols, $n) {
     $rows: ceil($n / $cols);

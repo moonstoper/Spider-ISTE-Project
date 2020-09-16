@@ -1,3 +1,7 @@
+.grid li {
+  padding: 0.1rem;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
