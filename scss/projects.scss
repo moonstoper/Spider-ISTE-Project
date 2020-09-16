@@ -50,15 +50,8 @@
   }
   
   
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
-  @media (min-width: 40em) {
-    body {
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-    }
-  }
+ 
+  
   img,
   a {
       display: block;
