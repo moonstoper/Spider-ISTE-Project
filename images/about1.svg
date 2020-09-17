@@ -4,7 +4,8 @@
 	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{font-family:'SegoePrint-Bold';}
+	.st1{font-family:Poppins,sans serif;
+	font-weight: bold;}
 	.st2{font-size:48px;}
 </style>
 <g>
@@ -3972,5 +3973,5 @@ H3eAuu56/wCkckePLl/pGHNC/n/pBu53IX/7r7P/2Q==" transform="matrix(0.4571 0 0 0.457
 	</image>
 </g>
 <rect x="718.25" y="24.08" class="st0" width="1110.42" height="843.75"/>
-<text transform="matrix(1 0 0 1 741.8726 121.3164)"><tspan x="0" y="0" class="st1 st2">college: Birsa Institute of Technology, Sindri</tspan><tspan x="231.83" y="115.2" class="st1 st2">Course: B.tech (persuing) </tspan><tspan x="107.53" y="172.8" class="st1 st2">Computer Science and Engineering </tspan><tspan x="421.81" y="288" class="st1 st2">3rd Year</tspan><tspan x="225.08" y="460.8" class="st1 st2">Founding Member: HNCC</tspan></text>
+<text transform="matrix(1 0 0 1 741.8726 121.3164)"><tspan x="0" y="0" class="st1 st2">College: Birsa Institute of Technology, Sindri</tspan><tspan x="231.83" y="115.2" class="st1 st2">Course: B.tech (persuing) </tspan><tspan x="107.53" y="172.8" class="st1 st2">Computer Science and Engineering </tspan><tspan x="421.81" y="288" class="st1 st2">3rd Year</tspan><tspan x="225.08" y="460.8" class="st1 st2">Founding Member: HNCC</tspan></text>
 </svg>
