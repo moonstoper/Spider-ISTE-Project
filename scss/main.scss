@@ -1,0 +1,55 @@
+@import "../node_modules/include-media/dist/_include-media";
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    //in url add your folder path of FontAwsome Fonts
+    src: url("../webfonts/fa-solid-900.ttf") format('truetype');
+}
+.blquote {
+    padding: 60px 80px 40px;
+    position: relative;
+}
+.blquote p {
+    font-family: "Utopia-italic";
+    font-size: 35px;
+    font-weight: 700px;
+    text-align: center;
+    color: white;
+}
+
+@include media("<=phone")
+{
+    .blquote p{
+        font-size: 20px;
+    }
+}
+/*blockquote p::before {
+    content: "\f095"; 
+    font-family: FontAwesome;
+   display: inline-block;
+   padding-right: 6px;
+   vertical-align: middle;
+  font-size: 180px;
+ }*/
+
+.blquote:before {
+  position: absolute;
+  font-family: 'Font Awesome 5 Free';
+  top: 0;
+  
+  content:"\f10d";
+  font-size: 200px;
+  color: rgba(105, 105, 105, 0.301);
+   
+}
+
+.blquote::after {
+    content: "";
+    top: 20px;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    border-bottom: 3px solid #bf0024;
+    height: 3px;
+    width: 200px;
+}
+

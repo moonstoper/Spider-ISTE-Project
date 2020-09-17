@@ -1,9 +1,11 @@
 // importing files
 @import ../sass/_color
 @import ../node_modules/include-media/dist/_include-media
-@import ../scss/fontawesome
-@import ../scss/solid
-@import ../scss/brands
+@font-face 
+    font-family: 'Font Awesome 5 Free'
+    //in url add your folder path of FontAwsome Fonts
+    src: url("../webfonts/fa-solid-900.ttf") format('truetype')
+
 //making use of whole page
 *
     margin: 0rem
@@ -102,12 +104,11 @@ nav
 
 //the link expand on mobile phones
 .burger div
-    @extend %fa-icon
-    @extend .fas
     display: none
     font-size: 1.5rem
+    font-family: 'Font Awesome 5 Free'
     &:before
-        content: fa-content($fa-var-bars)
+        content: "\f0c9"
 
 //for testing //marking boundary for about content to start
 .line1
@@ -181,7 +182,7 @@ nav
         z-index: 99
         color: $navbg
         &:before //adding fontawesome icon
-            content: fa-content($fa-var-times)
+            content: "\f00d"
 
     //changing entire navbar color 
     nav.open
@@ -359,11 +360,7 @@ section
 [data-scroll="out"]
     transform: translateY(5rem)
 
-.fb
-    @extend %fa-icon
-    @extend .fab
-    &::before
-        content: fa-content($fa-var-facebook)
+
 .thanks
     margin-top: 3rem
 .icon-top
