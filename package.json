@@ -1,0 +1,26 @@
+{
+  "name": "spider-iste",
+  "version": "1.0.0",
+  "description": "WebProject for ISTE Spider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error : None\" && exit 1"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
+    "include-media": "^1.4.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonstoper/Spider-ISTE-Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moonstoper/Spider-ISTE-Project/issues"
+  },
+  "homepage": "https://github.com/moonstoper/Spider-ISTE-Project#readme",
+  "devDependencies": {}
+  
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Roboto";
+  src: "../fonts/Roboto-Regular.ttf";
+}
+@font-face {
+  font-family: "CalvinFallen";
+  src: url("../fonts/CalvinFallen-1GDgg.otf") format("opentype");
+}
+@font-face {
+  font-family: "Halinum";
+  src: url("../fonts/Halimun.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Heatwood";
+  src: url("../fonts/Heatwood.ttf") format("truetype");
+}
