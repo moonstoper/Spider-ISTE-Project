@@ -17,3 +17,4 @@ use  `npm install` to install dependencies and setup the project
 #### 🤞 ToDo
 - 📔 Language Change
 - 🦄 More styling
+- 🙌🏻 Loading Screen
