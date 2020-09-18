@@ -1,5 +1,5 @@
 ### Portfolio (Spider-ISTE)
-    Portfolio website being made for Spider(Iste Project)
+`Portfolio website being made for Spider(Iste Project)`
 
 #### Node is used in the project
 use  `npm install` to install dependencies and setup the project
