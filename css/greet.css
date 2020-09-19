@@ -1,1 +1,132 @@
-.containerbox{margin-top:0rem;height:90vh;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:fixed;z-index:0;font-family:Poppins}.img1{height:70vh;width:50%;transform:scaleX(-1);-webkit-transform:scaleX(-1);margin-top:5rem;margin-right:1rem;padding:2rem}.type-text{color:#6C63FF}.type-cursor{display:inline-block;width:.1rem !important;background-color:#5e6997;margin-left:.2rem;-webkit-animation:blink 1s  infinite;animation:blink 1s  infinite}@-webkit-keyframes blink{0%{opacity:1}49%{opacity:.1}50%{opacity:0}99%{opacity:.9}100%{opacity:1}}@keyframes blink{0%{opacity:1}49%{opacity:.1}50%{opacity:0}99%{opacity:.9}100%{opacity:1}}.type-cursor.typing{-webkit-animation:none;animation:none}.greetimage1,.greetimage2{-webkit-transition:all 1s ease-out;transition:all 1s ease-out}.greetimage1.blockd{-webkit-transition:all 1s ease-out;transition:all 1s ease-out;display:none}.greetimage2.blockd{-webkit-transition:all 1s ease-out;transition:all 1s ease-out;display:none}.greets{font-size:2.5rem;font-weight:bold;-ms-flex-line-pack:center;align-content:center;width:50%;margin-left:4rem}@media (max-width: 730px){.containerbox{height:90vh;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-top:-2rem}.img1{height:60vh}.greets{width:80%;margin-top:10rem;font-size:2rem;margin-left:-5%}}@media (min-width: 730px) and (max-width: 1200px){.greets{margin-top:-9rem}.containerbox{margin-top:5rem}}
+.containerbox {
+  margin-top: 0rem;
+  height: 90vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  z-index: 0;
+  font-family: Poppins;
+}
+.img1 {
+  height: 70vh;
+  width: 50%;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  margin-top: 5rem;
+  margin-right: 1rem;
+  padding: 2rem;
+}
+.type-text {
+  color: #6c63ff;
+}
+.type-cursor {
+  display: inline-block;
+  width: 0.1rem !important;
+  background-color: #5e6997;
+  margin-left: 0.2rem;
+  -webkit-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.type-cursor.typing {
+  -webkit-animation: none;
+  animation: none;
+}
+.greetimage1,
+.greetimage2 {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+.greetimage1.blockd {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  display: none;
+}
+.greetimage2.blockd {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  display: none;
+}
+.greets {
+  font-size: 2.5rem;
+  font-weight: bold;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  width: 50%;
+  margin-left: 4rem;
+}
+@media (max-width: 730px) {
+  .containerbox {
+    height: 90vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: -2rem;
+  }
+  .img1 {
+    height: 60vh;
+  }
+  .greets {
+    width: 80%;
+    margin-top: 10rem;
+    font-size: 2rem;
+    margin-left: -5%;
+  }
+}
+@media (min-width: 730px) and (max-width: 1200px) {
+  .greets {
+    margin-top: -9rem;
+  }
+  .containerbox {
+    margin-top: 5rem;
+  }
+}
+.greets .eng,.hindi{
+  color:#5e6997;
+}
