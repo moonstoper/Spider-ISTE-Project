@@ -280,15 +280,3 @@
     box-sizing: border-box;
   }
   
-  body {
-    min-height: 100vh;
-    font-family: Roboto, Arial;
-    color: #ADAFB6;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-            align-items: center;
-    background: #F9FBFF;
-  }
