@@ -15,7 +15,7 @@
 .endPart h1 {
     color: #fae8e8;
     font-size: calc(1em + 20vw);
-    font-size: 120px;
+    font-size: 60px;
     letter-spacing: 0.1em;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
@@ -26,7 +26,7 @@
 }
 
 .endPart h1:hover {
-    font-size: 130px;
+    font-size: 80px;
     text-shadow: 10px 10px #4458dc, 25px 25px #000000;
 }
 
@@ -57,14 +57,19 @@
     height: 3px;
     width: 1rem;
     content: "";
-    transition: all 2s ease-out;
+    transition: all 1s ease-out;
 }
 
 .endPart a:hover::before {
-    background-color: rgb(182, 55, 55);
-    height: 3px;
+    background-color: rgb(114, 55, 182);
+    height: 20px;
     width: 10rem;
+    transform: rotate(-5deg);
     content: "";
     position: absolute;
+    top: 95%;
     opacity: 1;
+    mix-blend-mode: color-dodge;
+    transition: all 1s ease-out;
+
 }
