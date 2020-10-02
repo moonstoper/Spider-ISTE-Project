@@ -7,7 +7,7 @@ use  `npm install` to install dependencies and setup the project
 <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="HTML5" widht ="25px" height="25px"/>&nbsp;<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png " alt="CSS3" widht ="25px" height="25px"/>&nbsp;<img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" alt="JS" widht ="25px" height="25px"/>
 #### Team
 > 🧟 Suraj Kachhap aka [moonstoper](https://github.com/moonstoper/) <br/>
-> 🧛 Sapan Ravidas aka [Sapna-Ravidas](https://github.com/Sapan-Ravidas/)
+> 🧛 Sapan Ravidas aka [Sapan-Ravidas](https://github.com/Sapan-Ravidas/)
 
 #### ScreenShots
 ![Portfolio - Google Chrome 9_17_2020 2_19_24 PM](https://user-images.githubusercontent.com/53539666/93448209-fb4a2000-f8f0-11ea-9221-5145d674aeb3.png)
